@@ -1,53 +1,133 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Padoca Mágica</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./CSS/home.css" />
+    <title>Padoka Mágica</title>
+    <link rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
     <header id="header" class="header">
       <div class="logoContainer">
-        <img src="./assets/img/Logoimage.png" alt="Logo da Padoka Mágica" />
+        <img src="./assets/img/LogoImage.png" alt="Logo da Padoka Mágica" />
         <h1>Padoka Mágica</h1>
       </div>
 
       <nav class="navigation">
         <a href="#hero" class="link-menu">Início</a>
-          <a href="#historia" class="link-menu">Sobre</a>
-          <a href="#como-chegar" vlass="link-menu">Como chegar</a>
-          <a href="#contato" class="link-menu">Cardápio</a>
+        <a href="#historia" class="link-menu">Sobre</a>
+        <a href="#como-chegar" class="link-menu">Como chegar</a>
+        <a href="#contato" class="link-menu">Cardápio</a>
       </nav>
     </header>
 
     <main id="content" class="content">
+      <!-- Hero -->
       <section id="hero" class="hero">
         <div class="hero-text">
           <p class="hero-tag">Padaria artesanal de Mitakihara</p>
           <h1 class="titulo-hero">Faça um contrato com o pão quentinho</h1>
           <p class="subtitulo-hero">
-            Aqui ninguém precisa virar garota mágica para ter desejo realizado.
-            Experimente o Croissa
+            Aqui ninguém precisa virar garota mágica pra ter um desejo
+            realizado. Experimente o Croissant Rosa da Madoka, o Pão de Queijo
+            da Charlotte e a Torta Tiro Finale da Mami, sempre com um chá bem
+            quentinho.
           </p>
           <div class="hero-botoes">
             <a href="#contato" class="botao">Fazer meu pedido</a>
-            <a href="historia" class="botao botao-secundario"
-              >Conheça a gente</a
-            >
+            <a href="#historia" class="botao botao-secundario">Conheça a gente</a>
+          </div>
+        </div>
+
+        <div class="hero-imagem">
+          <div class="circulo">
             <img src="./assets/img/heroImage.png" alt="Pão quentinho" />
-            <svg><use href="./assets/icons/seta.svg"></use></svg>
+          </div>
+          <img class="madoka" src="./assets/img/Madoka.png" alt="Madoka" />
+          <div class="selo">Desde<br />2011</div>
+        </div>
+      </section>
+
+      <!-- Nossa história -->
+      <section id="historia" class="historia">
+        <h2 class="titulo-secao">Nossa História</h2>
+        <div class="historia-conteudo">
+          <div class="historia-texto">
+            <p>
+              A Padoka Mágica nasceu em 2011, na cozinha do Seu Tomohisa, em
+              Mitakihara. Enquanto a família saía para trabalhar e estudar, ele
+              cuidava da horta e assava pães para os vizinhos, que logo
+              começaram a fazer fila no portão toda manhã.
+            </p>
+            <p>
+              Hoje a equipe cresceu. A Mami cuida das tortas e do chá da tarde,
+              a Kyoko nunca deixa ninguém sair sem provar o Taiyaki de Maçã do
+              Amor e a Sayaka recheia o famoso Sonho Azul Oceano. Já a Homura
+              assa o Pão Integral Loop Temporal quantas vezes for preciso até
+              ele sair perfeito.
+            </p>
+            <p>
+              Nossa única regra: nenhum produto vem com contrato escondido. Se
+              um gatinho branco aparecer no balcão oferecendo desejos, pode
+              ignorar.
+            </p>
+          </div>
+
+          <div class="historia-cards">
+            <div class="card">
+              <span class="card-numero">2011</span>
+              <p>Primeira fornada na cozinha do Seu Tomohisa</p>
+            </div>
+            <div class="card" id="card-azul">
+              <span class="card-numero">5</span>
+              <p>Garotas mágicas trabalhando no forno e no balcão</p>
+            </div>
+            <div class="card" id="card-amarelo">
+              <span class="card-numero">40+</span>
+              <p>Receitas, do Brigadeiro Grief Seed à Rosquinha Soul Gem</p>
+            </div>
+            <div class="card">
+              <span class="card-numero">∞</span>
+              <p>Loops temporais da Homura até a fornada ficar perfeita</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Como chegar -->
+      <section id="como-chegar" class="como-chegar">
+        <h2 class="titulo-secao">Como chegar</h2>
+        <div class="chegar-container">
+          <div class="mapa">
+            <iframe
+              class="mapa-iframe"
+              src="https://maps.google.com/maps?q=Pra%C3%A7a%20da%20S%C3%A9%2C%20S%C3%A3o%20Paulo&z=15&output=embed"
+              loading="lazy"
+              title="Mapa da Padoka Mágica"
+            ></iframe>
+          </div>
+          <div class="info-endereco">
+            <h3>Endereço</h3>
+            <p>
+              Rua Mitakihara, 123 - Centro<br />São Paulo - SP<br />CEP
+              01000-000
+            </p>
+            <h3>Horário de funcionamento</h3>
+            <p>
+              Segunda a sábado: 6h às 20h<br />Domingo: 7h às 13h<br />Fechamos
+              mais cedo em noite de Walpurgisnacht.
+            </p>
+            <h3>Transporte</h3>
+            <p>
+              A 5 minutos a pé da estação de metrô. Se no caminho você entrar no
+              labirinto de uma bruxa, é só seguir o cheiro de pão quentinho.
+            </p>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
+
+    <footer id="contato" class="footer">
       <div class="footer-container">
         <div class="footer-coluna">
           <p class="logo-footer">Padoka Mágica</p>
