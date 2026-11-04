@@ -72,6 +72,7 @@
               ignorar.
             </p>
           </div>
+          
 
           <div class="historia-cards">
             <div class="card">
@@ -124,6 +125,41 @@
             </p>
           </div>
         </div>
+      </section>
+      <section id="contato" class="contato">
+        <h2 class="titulo-secao">Contato</h2>
+        <p class="texto-contato">Quer fazer uma encomenda ou tirar dúvidas? Manda uma mensagem! Prometemos realizar seu pedido sem cobrar sua alma.</p>
+<form id="form-contato" class="formulario" action="#">
+<label for="nome">Nome</label>
+<input type="text" id="nome" name="nome" placeholder="seuemail@mitakihara.com" required>
+<label for="telefone">Telefone</label>
+<input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999">
+<label for="assunto">Assunto</label>
+<select id="assunto" name="assunto">
+  <option value="encomenda">Encomenda</option>
+  <option value="duvida">Dúvida</option>
+  <option value="elogio">Elogio</option>
+  <option value="desejo">Fazer um desejo(Não recomendamos)</option>
+</select>
+
+<label for="produto">Produto</label>
+<select name="produto" id="produto">
+<option value="croissant">Croissant Rosa da Madoka</option>
+<option value="pao-queijo">Pão de Queijo da Charlotte</option>
+<option value="torta">Torta Tiro Finale da Mami</option>
+<option value="taiyaki">Taiyaki de Maçã do Amor da Kyoko</option>
+<option value="sonho">Sonho Azul Oceano da Sayaka</option>
+<option value="integral">Pão Integral Loop Temporal da Homura</option>
+<option value="rosquinha">Rosquinha Soul Gem</option>
+<option value="brigadeiro">Brigadeiro Grief Seed</option>
+<option value="cafe">Café Walpurgisnacht (extra forte)</option>
+</select>
+
+<label for="mensagem">Mensagem</label>
+<textarea id="mensagem" name="mensagem" placeholder="Escreva seu pedido aqui..." required>
+</textarea>
+<button type="submit" class="botao botao-enviar">Enviar pedido</button>
+</form>
       </section>
       
     </main>
