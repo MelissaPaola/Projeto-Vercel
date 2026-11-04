@@ -48,6 +48,7 @@ body {
 .logoContainer img {
   width: auto;
   height: calc(var(--altura-header) - 1vh);
+  pointer-events: none;
 }
 
 .navigation {
