@@ -278,3 +278,72 @@ font-size: 16px;
 cursor: pointer;
 margin-top: 10px;
 }
+
+@media (max-width=786px) {
+    .hero-texto {
+        flex-direction: column;
+        padding: 190px 20px 60px;
+    }
+ 
+    .hero-texto,
+    .hero-imagem {
+        width: 100%;
+    }
+ 
+    .hero-texto {
+        text-align: center;
+    }
+ 
+    .hero-tag {
+        margin: 0 auto 20px;
+    }
+ 
+    .hero-titulo {
+        font-size: 38px;
+    }
+ 
+    .botao-secundario {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+ 
+    .circulo {
+        width: 250px;
+        height: 250px;
+        margin-top: 40px;
+    }
+ 
+    .selo {
+        width: 85px;
+        height: 85px;
+        right: 20px;
+        font-size: 14px;
+    }
+ 
+    .historia,
+    .como-chegar,
+    .contato {
+        padding: 70px;
+    }
+ 
+    .titulo-secao {
+        font-size: 34px;
+    }
+ 
+    .historia-conteudo,
+    .como-chegar {
+        flex-direction: column;
+    }
+ 
+    .historia-texto,
+    .historia-cards,
+    .mapa,
+    .info-endereco,
+    .card {
+        width: 100%;
+    }
+ 
+    .formulario{
+        padding: 25px;
+    }
+}

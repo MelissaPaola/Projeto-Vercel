@@ -1,1 +1,54 @@
 @import url(./layout.css);
+
+.cardapio-topo {
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    padding: calc(var(--altura-header) + 60px);
+}
+
+.cardapio-tag {
+background-color: var(--cor-branca);
+color: var(--vinho);
+font-weight: bold;
+
+width: fit-content;
+margin: auto;
+padding: 6px 16px;
+border-radius: 20px;
+}
+
+.cardapio-titulo {
+color: var(--vinho);
+
+font-family: 'Fonte Título';
+font-size: 56px;
+}
+
+.cardapio-subtitulo {
+
+    font-size: large;
+    margin: auto;
+}
+
+.cardapio-conteudo {
+    display: flex;
+    align-items: flex-start;
+}
+
+.lista-categorias {
+    display: flex; 
+    flex-direction: column;
+}
+
+.categoria-cabecalho {
+    border-bottom: 3px solid var(--azul);
+}
+
+.lista-itens {
+    display: flex;
+    gap: 20px;
+}
+
+.item {
+    width: 50%;
+}
