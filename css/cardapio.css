@@ -1,9 +1,11 @@
 @import url(./layout.css);
+@import url(./variables.css);
+@import url(./responsivo.css);
 
 .cardapio-topo {
   background-color: var(--cor-secundaria);
   text-align: center;
-  padding: calc(var(--altura-header) + 60px);
+  padding: calc(var(--altura-header) + 60px) 20px 50px;
 }
 
 .cardapio-tag {
@@ -69,4 +71,30 @@
 
   border-left: 6px solid var(--vinho);
   border-radius: 12px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .cardapio-conteudo {
+    flex-direction: column;
+  }
+
+  .lista-categorias {
+    width: 100%;
+  }
+}
+
+/* Celular */
+@media (max-width: 700px) {
+  .cardapio-titulo {
+    font-size: 38px;
+  }
+
+  .cardapio-conteudo {
+    padding: 15px;
+  }
+
+  .item {
+    width: 100%;
+  }
 }
